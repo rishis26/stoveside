@@ -1,0 +1,183 @@
+/* White/blue/light blue home page theme */
+body, .home-page {
+  background: linear-gradient(120deg, #e3f0fa 0%, #ffffff 100%);
+  min-height: 100vh;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #222;
+}
+
+.main-content {
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px 0 rgba(25, 118, 210, 0.07);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 2.5rem auto 0 auto;
+  max-width: 1200px;
+}
+
+@media (max-width: 700px) {
+  .main-content {
+    padding: 1.2rem 0.5rem;
+    border-radius: 12px;
+  }
+  .search-form {
+    flex-direction: column !important;
+    gap: 12px !important;
+    align-items: stretch !important;
+  }
+  .MuiTextField-root, .MuiFormControl-root {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
+.home {
+  padding: 2rem 0;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-section {
+  margin-bottom: 3rem;
+}
+
+.search-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-inputs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.cuisine-select {
+  min-width: 150px;
+  padding: 12px 16px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.cuisine-select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.clear-btn {
+  margin-left: 1rem;
+}
+
+.recipes-section {
+  margin-top: 3rem;
+}
+
+.recipes-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.no-recipes {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+  
+  .search-inputs {
+    flex-direction: column;
+  }
+  
+  .cuisine-select {
+    min-width: auto;
+  }
+  
+  .recipes-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .clear-btn {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
+/* Dark mode overrides for search input/select */
+.MuiTextField-root, .MuiFormControl-root {
+  background: #232b3a !important;
+  border-radius: 12px !important;
+  color: #fff !important;
+}
+.MuiInputBase-input, .MuiSelect-select {
+  color: #fff !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+}
+.MuiInputLabel-root {
+  color: #b0c4de !important;
+}
+.Mui-focused .MuiInputLabel-root {
+  color: #64b5f6 !important;
+}
+.MuiOutlinedInput-notchedOutline {
+  border-color: #22304a !important;
+}
+.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #64b5f6 !important;
+}
+::placeholder {
+  color: #b0c4de !important;
+  opacity: 1 !important;
+} 

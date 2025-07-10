@@ -1,0 +1,214 @@
+.recipe-detail {
+  padding: 2rem 0;
+}
+
+.recipe-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  align-items: start;
+}
+
+.recipe-image-large {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-image-large img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.recipe-info h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.recipe-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.cuisine-badge {
+  background: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.recipe-author {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.recipe-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.recipe-content {
+  margin-bottom: 3rem;
+}
+
+.recipe-section {
+  margin-bottom: 2.5rem;
+}
+
+.recipe-section h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredients-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.ingredients-list li:before {
+  content: "•";
+  color: #007bff;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.ingredients-list li:last-child {
+  border-bottom: none;
+}
+
+.instructions {
+  line-height: 1.6;
+  color: #444;
+}
+
+.instructions p {
+  margin-bottom: 1rem;
+}
+
+.recipe-timing {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.timing-item {
+  text-align: center;
+}
+
+.timing-item h3 {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.timing-item p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.recipe-footer {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.error-page {
+  text-align: center;
+  padding: 3rem;
+}
+
+.error-page h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.error-page p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.recipe-detail .MuiPaper-root {
+  margin-bottom: 2rem;
+}
+
+.recipe-detail .MuiTypography-h5 {
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.recipe-detail .MuiList-root {
+  padding-left: 0.5rem;
+}
+
+.recipe-detail .MuiListItem-root {
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 0;
+}
+
+.recipe-detail .MuiListItem-root:last-child {
+  border-bottom: none;
+}
+
+.recipe-detail .MuiPaper-elevation1 {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .recipe-header {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .recipe-info h1 {
+    font-size: 2rem;
+  }
+  
+  .recipe-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .recipe-actions {
+    flex-direction: column;
+  }
+  
+  .recipe-timing {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .recipe-detail .MuiBox-root {
+    flex-direction: column !important;
+    gap: 2rem !important;
+  }
+} 
